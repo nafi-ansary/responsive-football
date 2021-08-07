@@ -34,10 +34,14 @@ body{
     width: 556px;
     height: 438px;
 }
+.banner-img:hover{
+    transform: rotate(360deg);
+    transition: transform 3s;
+}
 /* first middle part styles */
 
 .first-middle-part{
-    background-color: gray;
+    background-color: lightgray;
 }
 
 .players-biodata{
@@ -56,3 +60,59 @@ body{
     width: 330px;
     height: 237px;
 }
+/* second middle part styles */
+
+.second-middle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px 20px;
+}
+.second-middle img{
+    width: 567px;
+    height: 427px;
+}
+/* last part */
+.last-part{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   justify-items: center;
+}
+.last-part .logo-1 img{
+    width: 200px;
+    height: 60px;
+}
+.last-part .logo-2 img{
+    width: 50px;
+    height: 50px;
+}
+/* footer style */
+footer{
+    text-align: center;
+    margin: 20px 20px;
+}
+/* media queries */
+/* mobile devices */
+@media only screen and (max-width:688px){
+    .common-class{
+        width: 100%;    
+    }  
+    .common-class{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .banner-texts{
+        font-size: 15px;
+        text-align: center;
+    }
+    .second-middle-info{ 
+        font-size: 12px;
+        text-align: center;
+    }
+    }
+    
+
+
